@@ -2,40 +2,89 @@
 Google Maps and Geolocator
 A Flutter application that integrates Google Maps and Geolocator to provide real-time tracking of the user's location with smooth animation, polyline tracking, and interactive markers.
 
-🧪 Assignment Objective
-This app demonstrates:
 
-📍 Automatic map animation to the user's location
+## 🧪 Assignment Objective
 
-🔄 Real-time location updates every 10 seconds
+This project demonstrates:
 
-📈 Polyline tracking of movement
+* 📍 **Automatic Map Animation** to the user's current location
+* 🔄 **Real-Time Location Updates** every 10 seconds
+* 📈 **Polyline Tracking** between previous and current locations
+* ℹ️ **Marker Info Window** with location data
 
-ℹ️ Interactive marker info window showing location data
+---
 
-🛠 Features
-✅ 1. Automatic Map Animation
-On app launch, the map automatically animates and centers to the user's current location.
+## 🛠 Features
 
-✅ 2. Real-Time Location Updates
-Location is updated every 10 seconds.
+### ✅ 1. Automatic Map Animation
 
-The marker moves with each update to show real-time movement.
+* On app launch, the map animates and centers to the user's current position.
 
-✅ 3. Polyline Tracking
-As the user's location changes, a polyline is drawn between the previous and current points.
+### ✅ 2. Real-Time Location Updates
 
-Continues to build a path as the user moves.
+* Location updates every 10 seconds.
+* Marker position updates in real time.
 
-✅ 4. Marker Information Window
-Tapping the marker shows an info window.
+### ✅ 3. Polyline Tracking
 
-Title: My current location
+* A polyline connects the movement path between locations.
+* Continuously updated as the user moves.
 
-Snippet: Current latitude and longitude
+### ✅ 4. Marker Info Window
 
-📦 Packages Used
-Package	Description
-google_maps_flutter	Embeds Google Maps in the Flutter app
-geolocator	Gets real-time device location
-permission_handler	Requests and handles runtime permissions
+* Tapping the marker shows:
+
+  * Title: `My current location`
+  * Snippet: `Latitude` and `Longitude`
+
+---
+
+## 📦 Packages Used
+
+| Package               | Description                              |
+| --------------------- | ---------------------------------------- |
+| `google_maps_flutter` | Embeds Google Maps in the Flutter app    |
+| `geolocator`          | Provides real-time device location       |
+| `permission_handler`  | Requests and manages runtime permissions |
+
+---
+
+## 🚀 Getting Started
+
+### Prerequisites
+
+* Flutter SDK installed
+* Android/iOS emulator or real device
+* A valid Google Maps API Key
+
+### Installation
+
+```bash
+git clone https://github.com/your-username/google_maps_tracker.git
+cd google_maps_tracker
+flutter pub get
+flutter run
+```
+
+### Add API Key
+
+Update your `AndroidManifest.xml` with your Google Maps API key:
+
+```xml
+<meta-data android:name="com.google.android.geo.API_KEY"
+           android:value="YOUR_API_KEY_HERE"/>
+```
+
+---
+
+## 📸 Screenshots
+
+(Add screenshots here if needed)
+
+---
+
+## 📝 License
+
+This project is for educational purposes.
+Feel free to customize and extend!
+
