@@ -1,4 +1,4 @@
-# OstadBatch9Module-22
+# OstadBatch9-Module-22
 # Google Maps with Geolocator - Flutter Project
 
 A clean and simple Flutter application that demonstrates the integration of **Google Maps** with **Geolocator** for real-time location tracking, marker animation, and polyline path drawing.
